@@ -1,0 +1,17 @@
+---
+- name: Webservers
+  hosts: webservers
+  become: true
+  tasks:
+    - name: Ensure NGINX package is present.
+      ansible.builtin.apt:
+        name: 
+          - nginx
+          - net-tools
+        update_cache: true
+
+    - name: Ensure NGINX is started and enabled.
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true
