@@ -1,9 +1,6 @@
-# terraform-ansible-integration-101
-Example to automate infrastructure with Terraform and Ansible
+# Automating Infrastructure with Terraform and Ansible Using the Ansible Provider
 
-This repository showcases how to seamlessly integrate Terraform and Ansible to automate infrastructure deployment on DigitalOcean. Terraform handles infrastructure provisioning, while Ansible manages configuration with precision.
-
-By leveraging the Ansible provider for Terraform, this example unifies both tools to provision and configure resources in a single, streamlined workflow, enhancing automation and efficiency.
+This repository demonstrates how to use Terraform and Ansible together to automate infrastructure deployment on DigitalOcean. Terraform provisions the infrastructure, and Ansible manages the configuration. Using the Ansible provider for Terraform, both tools work together to provision and configure resources in a single, efficient workflow.
 
 ## Overview 
 
@@ -95,3 +92,7 @@ $ systemctl status nginx
 ```
 $ terraform destroy -var "do_token=$DO_TOKEN"
 ```
+
+## License
+
+MIT / BSD
